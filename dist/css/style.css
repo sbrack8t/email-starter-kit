@@ -1,0 +1,19 @@
+body {
+  background: red;
+}
+
+a {
+  font-size: 30px;
+  color: orange;
+}
+
+h1 {
+  color: blue;
+}
+
+h1 span {
+  color: green;
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=style.css.map */

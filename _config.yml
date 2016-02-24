@@ -1,0 +1,18 @@
+# Site settings
+title: HTML Email Starter
+#email: your-email@domain.com
+description: HTML email starter kit
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+
+
+
+# Build settings
+markdown: kramdown
+source: src
+destination: dist
+sass_dir: sass
+highlighter: rouge
+exclude: ['css', 'sass', 'patterns']
+keep_files: ['css']

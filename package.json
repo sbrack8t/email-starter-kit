@@ -1,0 +1,16 @@
+{
+  "name": "base-email-starter",
+  "description": "HTML Email Generator",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-concurrent": "^2.2.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-jekyll": "^0.4.3",
+    "grunt-litmus": "^0.1.8",
+    "grunt-sass": "^1.1.0",
+    "grunt-shell": "^1.1.2",
+    "load-grunt-tasks": "~0.6.0",
+    "time-grunt": "~0.4.0"
+  }
+}
