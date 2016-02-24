@@ -1,0 +1,19 @@
+
+sitename: Forumone
+imgUrl: images
+socialmedia:
+  - name: facebook
+    url: http://facebook.com
+    image: ic_person_black_24dp.png
+
+  - name: twitter
+    url: http://twitter.com
+    image: ic_person_black_24dp.png
+
+  - name: instagram
+    url: http://facebook.com
+    image: ic_person_black_24dp.png
+
+  - name: youtube
+    url: http://facebook.com
+    image: ic_person_black_24dp.png

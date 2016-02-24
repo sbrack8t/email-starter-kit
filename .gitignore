@@ -4,3 +4,4 @@ _site
 _public
 node_modules
 secrets.json
+dist

@@ -1,21 +1,36 @@
 <!doctype html>
 <html>
-<head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>
-   Email Base Styles
- </title>
-
- <link rel="stylesheet" href="/css/style.css" media="all">
-
-</head>
-
+{% include head.html %}
 
 <body style="margin:0; padding: 0;">
   <center>
     <!--// Email body wrapper table  -->
     <table class="body-table" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+
+      <!-- // 1-COLUMN SCAFFOLD FOR HERO HEADER-->
+      <tr>
+        <td align="center" height="100%" valign="top" width="100%">
+          <!--[if mso]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="660">
+            <tr>
+            <td align="center" valign="top" width="660">
+            <![endif]-->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:660px;">
+            <tr>
+              <td align="center" valign="top">
+                <img src="/{{ site.data.base.imgUrl }}/{{ page.heroimage }}" alt="" class="hero-image">
+              </td>
+            </tr>
+          </table>
+          <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+      </tr>
+      <!-- 1-COLUMN SCAFFOLD FOR HERO HEADER// -->
+
 
       <!-- // 1-COLUMN SCAFFOLD -->
       <tr>
@@ -28,9 +43,12 @@
           <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:660px;">
             <tr>
               <td align="center" valign="top">
+
+
+
                 <!--// Email Content  -->
 
-                
+                {{ content }}
 
                 <!--// Email Content  -->
 

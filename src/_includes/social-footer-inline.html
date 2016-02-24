@@ -1,0 +1,46 @@
+<!-- // SOCIAL MEDIA -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:660px;">
+  <tr>
+    <td align="left" valign="top" style="padding:10px;">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#FAFAFA; border-bottom:2px solid #E0E0E0;">
+        <tr>
+          <td align="center" valign="top" style="padding-top:20px; padding-bottom:10px;">
+            <h4 style="color:#202020; font:16px/20px Rawlinson, Georgia, 'Times', 'Times New Roman', serif; letter-spacing:1px; margin:0 0 10px 0; padding:0;">Find Us Elsewhere</h4>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" style="font-size:0;">
+            <!--[if mso]>
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+                    <tr>
+                    <td align="center" valign="top" width="320">
+                    <![endif]-->
+            <div style="display:inline-block; min-width:300px; max-width:320; width:100%;">
+
+
+              <table align="center" border="0" cellpadding="0" cellspacing="0">
+
+                <!-- //Social Link  -->
+                <tr>
+                  {% for item in site.data.base.socialmedia%}
+                  <td align="center" valign="middle" width="24" style="padding:15px;">
+                    <a href="{{item.url}}" target="_blank"><img src="/{{ site.data.base.imgUrl }}/{{item.image}}" alt="" height="24" width="24" style="border:0; display:block;"></a>
+                  </td>
+                  {% endfor %}
+                </tr>
+                <!-- //Social Link  -->
+
+              </table>
+            </div>
+            <!--[if mso]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- SOCIAL MEDIA // -->
