@@ -111,6 +111,30 @@ module.exports = function(grunt) {
         src: 'dist/css/*.css'
       }
 
+    },
+
+    juice: {
+      options: {
+        preserveMediaQueries: true,
+        applyWidthAttributes: true,
+        preserveImportant: true,
+        preserveFontFaces: true,
+        webResources: {
+        images: false
+        }
+      },
+      dist: {
+        files: [
+          {
+            expand : true,
+            cwd: 'dist/emails/',
+            src: ['**/*.html'],
+            dest: 'dist/inline',
+            ext: '.il.html',
+            extDot: 'first'
+          }
+        ]
+      }
     }
 
   });
@@ -124,7 +148,8 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'shell:jekyllBuild',
     'sass',
-    'postcss'
+    'postcss',
+    'juice'
   ]);
 
   // Register build as the default task fallback

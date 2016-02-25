@@ -13,3 +13,10 @@
 .section-odd {
   background: #999999;
 }
+
+
+@media screen and (max-width: 600px) {
+  .section-odd {
+    background: $orange !important;
+  }
+}

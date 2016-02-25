@@ -8,6 +8,7 @@
     "grunt-concurrent": "^2.2.1",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-jekyll": "^0.4.3",
+    "grunt-juice-email": "^0.1.4",
     "grunt-litmus": "^0.1.8",
     "grunt-postcss": "^0.7.2",
     "grunt-sass": "^1.1.0",
