@@ -1,0 +1,42 @@
+// @file
+// Color variables
+// http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#variables_
+
+
+// Color Palette
+$burgundy: #872716;
+$orange: #e47700;
+$purple: #5f1256;
+$plum: #3f0c39;
+$cobalt: #296b8b;
+$smoke: #48535b;
+$softblack: #333333;
+$gray: #48535b;
+$offwhite: #f3f3f3;
+$deepblue: #164d69;
+
+// Theme color Map
+// $colorMap : (
+//
+// );
+
+//Color Placement Vars
+$primary-text-color: $softblack;
+$ui-border-color: rgba($smoke, .25);
+$secondary-text-color: #555;
+$heading-text-color: $purple;
+$body-color: #fff;
+$link-color: $orange;
+$link-hover-color: $orange;
+$selection-background: $cobalt;
+$selection-foreground: #fff;
+$status-color: #4d8e4d;
+$warning-color: #fcce00;
+$error-color: #900;
+$border-color: #ccc;
+$gradient-light: rgba(255, 255, 255, 0.2);
+$gradient-dark: rgba(0, 0, 0, 0.2);
+
+// Buttons
+$button-bg-color: $orange;
+$button-text-color: white;

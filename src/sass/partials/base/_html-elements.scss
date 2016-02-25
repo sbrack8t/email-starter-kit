@@ -1,0 +1,192 @@
+// @file
+// Default styling of html elements.
+
+
+
+a {
+  background-color: transparent;
+  color: $link-color;
+  // Improves readability when focused.
+  outline-offset: 2px;
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+}
+
+abbr {
+
+  &[title] {
+    border-bottom: 1px dotted;
+  }
+
+  &:hover {
+    cursor: help;
+  }
+}
+
+blockquote {
+  margin: 0 $spacing $spacing;
+}
+
+body {
+  background-color: $body-color;
+  color: $primary-text-color;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+// Don't style button elements, since they're often styled as links for
+// accessible widgets. Use the .button class in partials/components/buttons.
+button {
+  overflow: visible;
+}
+
+figcaption {}
+
+figure {
+  margin: 0 0 $spacing;
+}
+
+footer {}
+
+
+%hN {
+  color: $heading-text-color;
+  font-family: $header-font-family;
+  line-height: 1.1;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  @extend %hN;
+  font-family: $alt-font-family;
+  font-size: $font-size-xxl;
+  margin: $spacing-half 0 $spacing2x;
+}
+
+h2 {
+  @extend %hN;
+  font-size: $font-size-xl;
+  margin: $spacing-half 0 $spacing;
+}
+
+h3 {
+  @extend %hN;
+  font-size: $font-size-lg;
+  margin: $spacing-half 0 $spacing;
+}
+
+h4 {
+  @extend %hN;
+  font-size: $font-size-normal;
+  margin: $spacing-half 0 $spacing;
+}
+
+h5 {
+  @extend %hN;
+  font-size: $font-size-md;
+  margin: $spacing-half 0 $spacing;
+}
+
+h6 {
+  @extend %hN;
+  font-size: $font-size-sm;
+  margin: $spacing-half 0 $spacing;
+}
+
+header {}
+
+hr {
+  box-sizing: border-box;
+  border: 1px solid $ui-border-color;
+  height: 0;
+  margin: $spacing2x 0;
+  padding-bottom: -1px;
+}
+
+
+i {
+  font-style: italic;
+}
+
+
+
+ol {
+  margin: 0 0 spacing2x;
+  padding: 0 0 0 $spacing2x; // LTR
+
+  [dir="rtl"] & {
+    padding: 0 $spacing2x 0 0;
+  }
+
+  ol,
+  ul {
+    margin: 0;
+  }
+}
+
+
+p {
+  font-family: $base-font-family;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0 0 $spacing2x;
+}
+
+
+pre {
+  margin: 0 0 $spacing2x;
+  overflow: auto;
+}
+
+
+small {
+  font-size: $font-size-sm;
+}
+
+strong {
+  font-weight: bold;
+}
+
+sub {
+  bottom: -1px;
+}
+
+
+sup {
+  top: -1px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+textarea {
+  overflow: auto;
+}
+
+
+ul {
+  margin: 0 0 $spacing2x;
+  padding: 0 0 0 1.2em; // LTR
+
+  [dir="rtl"] & {
+    padding: 0 1.2em 0 0;
+  }
+
+  ol,
+  ul {
+    margin: 0;
+  }
+}

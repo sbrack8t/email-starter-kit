@@ -44,12 +44,23 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['<%= globalConfig.src %>/sass/**/*.{scss,sass}'],
-        tasks: ['sass'],
+        tasks: ['sass_globbing', 'sass'],
         options : {
           livereload : 4000
         }
       }
     },
+
+    sass_globbing: {
+     dist: {
+       files: {
+         '<%= globalConfig.src %>/sass/partials/_components.scss': '<%= globalConfig.src %>/sass/partials/components/**/*.scss',
+         '<%= globalConfig.src %>/sass/partials/_global.scss': '<%= globalConfig.src %>/sass/partials/global/**/*.scss',
+         '<%= globalConfig.src %>/sass/partials/_helper-classes.scss': '<%= globalConfig.src %>/sass/partials/helper-classes/**/*.scss'
+
+       }
+     }
+   },
 
 
     shell: {
@@ -65,6 +76,7 @@ module.exports = function(grunt) {
     // Run tasks in parallel
     concurrent: {
       serve : [
+        'sass_globbing',
         'sass',
         'watch',
         'shell:jekyllServe'

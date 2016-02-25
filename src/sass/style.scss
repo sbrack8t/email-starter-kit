@@ -1,9 +1,4 @@
-@import "test";
-
-h1 {
-  color: blue;
-  span {
-    color: green;
-    font-weight: normal;
-  }
-}
+@import "partials/global";
+@import "partials/base";
+@import "partials/helper-classes";
+@import "partials/components";

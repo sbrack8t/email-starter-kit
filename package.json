@@ -9,6 +9,7 @@
     "grunt-jekyll": "^0.4.3",
     "grunt-litmus": "^0.1.8",
     "grunt-sass": "^1.1.0",
+    "grunt-sass-globbing": "^1.4.0",
     "grunt-shell": "^1.1.2",
     "load-grunt-tasks": "~0.6.0",
     "time-grunt": "~0.4.0"
