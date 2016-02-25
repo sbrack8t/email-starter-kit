@@ -40,6 +40,7 @@ module.exports = function(grunt) {
       }
     },
 
+    // TODO: Fixe Live reload
     //watch tasks
     watch: {
       sass: {
@@ -104,7 +105,7 @@ module.exports = function(grunt) {
     postcss: {
       options: {
         processors: [
-          require('autoprefixer')({browser:'last 3 versions'})
+          require('autoprefixer')({browser:'last 6 versions, ie9'})
         ]
       },
       dist: {
