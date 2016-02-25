@@ -99,6 +99,18 @@ module.exports = function(grunt) {
           'ol2013', 'outlookcom', 'chromeoutlookcom', 'chromeyahoo', 'windowsphone8'] // https://#{company}.litmus.com/emails/clients.xml
         }
       }
+    },
+
+    postcss: {
+      options: {
+        processors: [
+          require('autoprefixer')({browser:'last 3 versions'})
+        ]
+      },
+      dist: {
+        src: 'dist/css/*.css'
+      }
+
     }
 
   });
@@ -111,7 +123,8 @@ module.exports = function(grunt) {
   //Register serve task
   grunt.registerTask('build', [
     'shell:jekyllBuild',
-    'sass'
+    'sass',
+    'postcss'
   ]);
 
   // Register build as the default task fallback
