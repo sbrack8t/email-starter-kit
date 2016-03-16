@@ -40,14 +40,25 @@ module.exports = function(grunt) {
       }
     },
 
-    // TODO: Fixe Live reload
+    connect: {
+        server: {
+          options: {
+            port: 8080,
+            base: 'dist/'
+
+          }
+        }
+    },
+    // TODO: Fix Live reload
     //watch tasks
     watch: {
       sass: {
-        files: ['<%= globalConfig.src %>/sass/**/*.{scss,sass}'],
-        tasks: ['sass_globbing', 'sass'],
+        files: ['<%= globalConfig.src %>/sass/**/*.{scss,sass}', '!<%= globalConfig.src %>/sass/partials/glob/**/*.{scss,sass}'],
+        tasks: ['concurrent'],
         options : {
-          livereload : 4000
+          livereload : true,
+          interrupt: true,
+          debounceDelay: 700,
         }
       }
     },
@@ -55,9 +66,9 @@ module.exports = function(grunt) {
     sass_globbing: {
      dist: {
        files: {
-         '<%= globalConfig.src %>/sass/partials/_components.scss': '<%= globalConfig.src %>/sass/partials/components/**/*.scss',
-         '<%= globalConfig.src %>/sass/partials/_global.scss': '<%= globalConfig.src %>/sass/partials/global/**/*.scss',
-         '<%= globalConfig.src %>/sass/partials/_helper-classes.scss': '<%= globalConfig.src %>/sass/partials/helper-classes/**/*.scss'
+         '<%= globalConfig.src %>/sass/partials/glob/_components.scss': '<%= globalConfig.src %>/sass/partials/components/**/*.scss',
+         '<%= globalConfig.src %>/sass/partials/glob/_global.scss': '<%= globalConfig.src %>/sass/partials/global/**/*.scss',
+         '<%= globalConfig.src %>/sass/partials/glob/_helper-classes.scss': '<%= globalConfig.src %>/sass/partials/helper-classes/**/*.scss'
 
        }
      }
@@ -71,19 +82,6 @@ module.exports = function(grunt) {
 
       jekyllServe: {
         command: 'bundle exec jekyll serve'
-      }
-    },
-
-    // Run tasks in parallel
-    concurrent: {
-      serve : [
-        'sass_globbing',
-        'sass',
-        'watch',
-        'shell:jekyllServe'
-      ],
-      options: {
-        logConcurrentOutput: true
       }
     },
 
@@ -114,6 +112,10 @@ module.exports = function(grunt) {
 
     },
 
+    concurrent: {
+      target: ['sass_globbing', 'sass']
+    },
+
     juice: {
       options: {
         preserveMediaQueries: true,
@@ -141,9 +143,6 @@ module.exports = function(grunt) {
   });
 
   //Register serve task
-  grunt.registerTask('serve', [
-    'concurrent:serve'
-  ]);
 
   //Register serve task
   grunt.registerTask('build', [
@@ -151,6 +150,15 @@ module.exports = function(grunt) {
     'sass',
     'postcss',
     'juice'
+  ]);
+
+  grunt.registerTask('sassBuild', [
+    'sass_globbing',
+    'sass'
+  ]);
+
+  grunt.registerTask('serve', [
+    'shell:jekyllBuild', 'concurrent' , 'connect', 'watch'
   ]);
 
   // Register build as the default task fallback

@@ -1,20 +1,18 @@
 ---
-layout: default
-title: Email Base Styles
-bodyclass: index
+layout: page
+title: Email Kit
+bodyclass: home
+
 
 ---
 
-<h1>Header 1</h1>
 
-<h2>Header 1</h2>
+<p>List of emails</p>
 
-<h3>Header 1</h3>
-
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea accusantium, perferendis cum sapiente nulla quaerat, unde. Omnis id autem facere non, fugit, nemo quia, consequatur culpa molestias explicabo nostrum rerum.
-</p>
-
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea accusantium, perferendis cum sapiente nulla quaerat, unde. Omnis id autem facere non, fugit, nemo quia, consequatur culpa molestias explicabo nostrum rerum.
-</p>
+<ul>
+  {% for email in site.emails  %}
+      <li>
+        <a href="{{ email.url }}">{{ email.title }}</a>
+      </li>
+{% endfor %}
+</ul>

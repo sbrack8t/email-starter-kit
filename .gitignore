@@ -5,3 +5,4 @@ _public
 node_modules
 secrets.json
 dist
+src/sass/partials/glob

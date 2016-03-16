@@ -4,7 +4,10 @@ title: HTML Email Starter
 description: HTML email starter kit
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
-
+collections:
+  emails:
+    output: true
+    permalink: /emails/:path/
 
 
 
