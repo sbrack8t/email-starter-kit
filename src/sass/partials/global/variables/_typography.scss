@@ -3,16 +3,16 @@
 // http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#variables_
 
 // Web Safe sans-serif font stack http://templates.mailchimp.com/design/typography/
-$web-safe-sans: Helvetica, Arial, Verdana, 'Trebuchet MS';
+$web-safe-sans: 'Lato', Helvetica, Arial, sans-serif;
 
 // Web Safe serif font stack http://templates.mailchimp.com/design/typography/
-$web-safe-serif: 'Georgia', 'Times New Roman', 'Courier';
+$web-safe-serif: Georgia, Times, 'Times New Roman', serif;
 
 
 
 $base-font-family: $web-safe-serif;
 $alt-font-family:  $web-safe-sans;
-$header-font-family: $alt-font-family;
+$header-font-family: $base-font-family;
 $monospace-font-family: Consolas, "Lucida Console", "Liberation Mono", "Courier New", monospace, sans-serif;
 $base-font-size: 18px;
 $base-line-height: 21px;

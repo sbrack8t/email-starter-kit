@@ -1,0 +1,57 @@
+// @file
+// Styling for feature item with image
+
+
+.teaser {
+  background: white;
+  padding-bottom: $spacing;
+  padding-top: $spacing;
+
+  .teaser__content,
+  .teaser__title,
+  .teaser__category {
+    padding-left: $spacing;
+    padding-right: $spacing;
+    text-align: left;
+  }
+
+
+  .image-wrap {
+    margin-bottom: 10px;
+    padding-left: $spacing;
+    padding-right: $spacing;
+
+    img {
+      max-width: 568px;
+    }
+
+
+  }
+
+  .teaser__category {
+    color: $smoke;
+    text-transform: uppercase;
+    font-family: $alt-font-family;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+
+}
+
+.teaser__wrapper {
+
+  // box-shadow: 0 2px 2px rgba(0,0,0,.75);
+  // padding-top: $spacing;
+  // padding-bottom: $spacing;
+}
+
+.teaser--slat {
+
+  .image-wrap {
+    padding-left: $spacing;
+    padding-right: 0;
+    
+  }
+
+}

@@ -6,9 +6,9 @@
 a {
   background-color: transparent;
   color: $link-color;
-  // color: brown;
   // Improves readability when focused.
   outline-offset: 2px;
+  font-size: 16px;
 
   &:active,
   &:hover {
@@ -82,14 +82,15 @@ h2 {
 
 h3 {
   @extend %hN;
-  font-size: $font-size-lg;
-  margin: $spacing-half 0 $spacing;
+  font-size: 26px;
+  margin: 0 0 $spacing;
 }
 
 h4 {
   @extend %hN;
-  font-size: $font-size-normal;
-  margin: $spacing-half 0 $spacing;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 0 $spacing;
 }
 
 h5 {
@@ -122,7 +123,7 @@ i {
 
 
 ol {
-  margin: 0 0 spacing2x;
+  margin: 0 0 $spacing2x;
   padding: 0 0 0 $spacing2x; // LTR
 
   [dir="rtl"] & {

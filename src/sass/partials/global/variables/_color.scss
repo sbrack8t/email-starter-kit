@@ -4,14 +4,11 @@
 
 
 // Color Palette
-$burgundy: #872716;
-$orange: #e47700;
-$purple: #5f1256;
-$plum: #3f0c39;
+$aqua: #00a6b6;
 $cobalt: #296b8b;
-$smoke: #48535b;
+$smoke: #808080;
 $softblack: #333333;
-$gray: #48535b;
+$gray: #444444;
 $offwhite: #f3f3f3;
 $deepblue: #164d69;
 
@@ -24,11 +21,11 @@ $deepblue: #164d69;
 $primary-text-color: $softblack;
 $ui-border-color: rgba($smoke, .25);
 $secondary-text-color: #555;
-$heading-text-color: $purple;
+$heading-text-color: $aqua;
 $body-color: #fff;
-$link-color: $orange;
-$link-hover-color: $orange;
-$selection-background: $cobalt;
+$link-color: $aqua;
+$link-hover-color: $aqua;
+$selection-background: $aqua;
 $selection-foreground: #fff;
 $status-color: #4d8e4d;
 $warning-color: #fcce00;
@@ -38,5 +35,5 @@ $gradient-light: rgba(255, 255, 255, 0.2);
 $gradient-dark: rgba(0, 0, 0, 0.2);
 
 // Buttons
-$button-bg-color: $orange;
+$button-bg-color: $aqua;
 $button-text-color: white;

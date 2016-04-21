@@ -60,6 +60,10 @@ module.exports = function(grunt) {
           interrupt: true,
           debounceDelay: 700,
         }
+      },
+      jekyll : {
+        files: ['<%= globalConfig.src %>/**/*.html'],
+        tasks: ['shell:jekyllBuild']
       }
     },
 

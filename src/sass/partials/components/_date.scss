@@ -1,0 +1,19 @@
+// @file
+// Styling for date text
+
+
+.date {
+    margin-right: $spacing;
+    font-family: $alt-font-family;
+
+
+
+  .month{
+    color: $aqua;
+    text-transform: uppercase;
+  }
+
+  .year {
+    color: white;
+  }
+}

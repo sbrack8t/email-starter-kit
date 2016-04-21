@@ -2,7 +2,7 @@
 <html>
 {% include head.html %}
 
-<body style="margin:0; padding: 0;">
+<body style="margin:0; padding: 0; width:100% !important;">
   <center>
     <!--// Email body wrapper table  -->
     <table class="body-table" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
@@ -11,14 +11,14 @@
       <tr>
         <td align="center" height="100%" valign="top" width="100%">
           <!--[if mso]>
-            <table align="center" border="0" cellspacing="0" cellpadding="0" width="660">
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
             <tr>
-            <td align="center" valign="top" width="660">
+            <td align="center" valign="top" width="600">
             <![endif]-->
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:660px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
             <tr>
               <td align="center" valign="top">
-                <img src="/{{ site.data.base.imgUrl }}/{{ page.heroimage }}" alt="" class="hero-image">
+                <img mc:edit="header_image" src="/{{ site.data.base.imgUrl }}/{{ page.heroimage }}" alt="R4D" class="hero-image">
               </td>
             </tr>
           </table>
@@ -31,26 +31,22 @@
       </tr>
       <!-- 1-COLUMN SCAFFOLD FOR HERO HEADER// -->
 
-
       <!-- // 1-COLUMN SCAFFOLD -->
       <tr>
-        <td align="center" height="100%" valign="top" width="100%">
+        <td class="section section--date" align="center" height="100%" valign="top" width="100%">
           <!--[if mso]>
-            <table align="center" border="0" cellspacing="0" cellpadding="0" width="660">
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
             <tr>
-            <td align="center" valign="top" width="660">
+            <td align="center" valign="top" width="600">
             <![endif]-->
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:660px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
             <tr>
               <td align="center" valign="top">
 
-
-
-                <!--// Email Content  -->
-
-                {{ content }}
-
-                <!--// Email Content  -->
+                <div class="date">
+                  <span mc:edit="date_month" class="month">March</span>
+                  <span mc:edit="date_year" class="year">2016</span>
+                </div>
 
               </td>
             </tr>
@@ -63,6 +59,31 @@
         </td>
       </tr>
       <!-- 1-COLUMN SCAFFOLD // -->
+
+
+      <!-- // 1-COLUMN SCAFFOLD -->
+      <tr>
+        <td class=" section section--content" align="center" height="100%" valign="top" width="100%">
+          <!--[if mso]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+            <tr>
+            <td align="center" valign="top" width="600">
+            <![endif]-->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+                <!--// Email Content  -->
+                {{ content }}
+                <!--// Email Content  -->
+          </table>
+          <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+      </tr>
+      <!-- 1-COLUMN SCAFFOLD // -->
+
+      {% include footer.html %}
 
     </table>
     <!--// Email body wrapper table  -->
