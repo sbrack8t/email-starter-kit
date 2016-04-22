@@ -69,8 +69,8 @@ footer {}
 
 h1 {
   @extend %hN;
-  font-family: $alt-font-family;
   font-size: $font-size-xxl;
+  font-weight: normal;
   margin: $spacing-half 0 $spacing2x;
 }
 
@@ -82,7 +82,7 @@ h2 {
 
 h3 {
   @extend %hN;
-  font-size: 26px;
+  color: $dark-district-gray;
   margin: 0 0 $spacing;
 }
 
@@ -138,9 +138,10 @@ ol {
 
 
 p {
+  -webkit-text-size-adjust:none;
   font-family: $base-font-family;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 19px;
+  line-height: 22px;
   margin: 0 0 $spacing2x;
 }
 

@@ -11,14 +11,16 @@
       <tr>
         <td align="center" height="100%" valign="top" width="100%">
           <!--[if mso]>
-            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
             <tr>
-            <td align="center" valign="top" width="600">
+            <td align="center" valign="top" width="700">
             <![endif]-->
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:700px;">
             <tr>
               <td align="center" valign="top">
-                <img mc:edit="header_image" src="/{{ site.data.base.imgUrl }}/{{ page.heroimage }}" alt="R4D" class="hero-image">
+                <a href="http://www.forumone.com">
+                  <img width="700" src="http://go.forumone.com/l/71122/2016-04-21/3f5ln9/71122/92864/f1_logo.jpg" alt="Forumone" class="hero-image" pardot-region="branding" pardot-region-type="image">
+                </a>
               </td>
             </tr>
           </table>
@@ -33,43 +35,13 @@
 
       <!-- // 1-COLUMN SCAFFOLD -->
       <tr>
-        <td class="section section--date" align="center" height="100%" valign="top" width="100%">
-          <!--[if mso]>
-            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
-            <tr>
-            <td align="center" valign="top" width="600">
-            <![endif]-->
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
-            <tr>
-              <td align="center" valign="top">
-
-                <div class="date">
-                  <span mc:edit="date_month" class="month">March</span>
-                  <span mc:edit="date_year" class="year">2016</span>
-                </div>
-
-              </td>
-            </tr>
-          </table>
-          <!--[if mso]>
-            </td>
-            </tr>
-            </table>
-            <![endif]-->
-        </td>
-      </tr>
-      <!-- 1-COLUMN SCAFFOLD // -->
-
-
-      <!-- // 1-COLUMN SCAFFOLD -->
-      <tr>
         <td class=" section section--content" align="center" height="100%" valign="top" width="100%">
           <!--[if mso]>
-            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
             <tr>
-            <td align="center" valign="top" width="600">
+            <td align="center" valign="top" width="700">
             <![endif]-->
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:700px;">
                 <!--// Email Content  -->
                 {{ content }}
                 <!--// Email Content  -->
@@ -84,6 +56,38 @@
       <!-- 1-COLUMN SCAFFOLD // -->
 
       {% include footer.html %}
+
+      <!-- // 1-COLUMN SCAFFOLD FOR HERO HEADER-->
+      <tr>
+        <td align="center" height="100%" valign="top" width="100%">
+      <table>
+        <tr>
+          <td align="center" height="100%" valign="top" width="100%">
+            <!--[if mso]>
+              <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
+              <tr>
+              <td align="center" valign="top" width="700">
+              <![endif]-->
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:700px;">
+              <tr>
+                <td align="center" valign="top">
+                  <p>&nbsp;</p>
+                  <p><a href="%%unsubscribe%%">Unsubscribe</a></p>
+                  <p>&nbsp;</p>
+                </td>
+              </tr>
+            </table>
+            <!--[if mso]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+          </td>
+        </tr>
+      </table>
+        <!-- 1-COLUMN SCAFFOLD FOR HERO HEADER// -->
+    </tr>
+  </td>
 
     </table>
     <!--// Email body wrapper table  -->

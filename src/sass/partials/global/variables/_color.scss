@@ -12,18 +12,30 @@ $gray: #444444;
 $offwhite: #f3f3f3;
 $deepblue: #164d69;
 
-// Theme color Map
-// $colorMap : (
-//
-// );
+
+$white: #fff;
+$black: #222;
+$dark-rainier: #0d5257;
+$rainier: #007681;
+$medium-rainier: #5cb8b3;
+$light-rainier: #b1e4e3;
+$del-ray-blue: #003a54;
+$f1-red: #ef413d;
+$dark-district-gray: #54585a;
+$med-district-gray: #898d8d;
+$light-district-gray: #c7c9c7;
+$light-slate-gray: #eaeff2;
+$yellow: #ffc600;
+
+
 
 //Color Placement Vars
-$primary-text-color: $softblack;
+$primary-text-color: $dark-district-gray;
 $ui-border-color: rgba($smoke, .25);
 $secondary-text-color: #555;
-$heading-text-color: $aqua;
+$heading-text-color: $del-ray-blue;
 $body-color: #fff;
-$link-color: $aqua;
+$link-color: $f1-red;
 $link-hover-color: $aqua;
 $selection-background: $aqua;
 $selection-foreground: #fff;
