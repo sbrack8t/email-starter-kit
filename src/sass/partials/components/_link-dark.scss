@@ -1,0 +1,14 @@
+// @file
+// Styling for darker links
+
+
+.link-dark {
+  color: #54595b;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: #889195;
+    text-decoration: underline;
+  }
+}

@@ -63,7 +63,7 @@ footer {}
 %hN {
   color: $heading-text-color;
   font-family: $header-font-family;
-  line-height: 1.1;
+  line-height: 1.2;
   text-rendering: optimizeLegibility;
 }
 
@@ -77,6 +77,7 @@ h1 {
 h2 {
   @extend %hN;
   font-size: $font-size-xl;
+  font-weight: 400;
   margin: $spacing-half 0 $spacing;
 }
 
@@ -140,8 +141,8 @@ ol {
 p {
   -webkit-text-size-adjust:none;
   font-family: $base-font-family;
-  font-size: 19px;
-  line-height: 22px;
+  font-size: 17px;
+  line-height: 24px;
   margin: 0 0 $spacing2x;
 }
 
